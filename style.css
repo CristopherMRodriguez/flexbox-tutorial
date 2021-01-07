@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  /*changed this to .body so that the backgrond image would apply to the entire document (not just the header section / div) */
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+  font-family: monospace;
+  font-size: 20px;
+
+}
+
+.top-bar{
+  /* you must also write "display" as a property before putting "flex" as a value. notice i got rid of the other flex values; they were unnecessary.*/
+  display: flex;
+  /*deleted width and height properties. width is set to 100% by default so unnecessary to list. */
+  /*added space between flex boxing. pushes the logo and ul onto opposite sides*/
+  justify-content: space-between;
+  /* add spacing from the menu items from the top*/
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.logo{
+  color: #fff;
+  font-size: 40px;
+}
+
+.menu {
+  
+}
+
+.menu ul li{
+  text-align: center;
+   /* this is used to get rid of the bullet points in the list items*/
+  list-style-type: none;
+  /* this is used to make the list items in a single line and not in the default multiple rows*/
+  display: inline-block;
+
+}
+
+.menu ul li a{
+  color: #fff;
+  text-decoration:none;
+  padding: 0;
+
+  border: 1px solid #fff
+}
+/* this is used to make the links change color when the mouse hovers*/
+ul li a:hover{
+  background-color: #fff;
+  color: #000
+}
+
+
+.banner-text{
+  display: flex;
+  padding: 15% 0;
+}
+
+.banner-text{
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.banner-text-items h1{
+  /*change to h1 tag (changed on html file too*/
+  font-size: 70px;   /*change to 70px size*/
+  margin-bottom: 20px;
+}
+
+.banner-text-itmes p{
+  font-size: 18px;
+}
+    /* copied these from menu selector styles from above but wanted to be able to slightly modify seperately */
+.menu-2 ul li{
+  text-align: center;
+   /* this is used to get rid of the bullet points in the list items*/
+  list-style-type: none;
+  /* this is used to make the list items in a single line and not in the default multiple rows*/
+  display: inline-block;
+
+}
+
+.menu-2 ul li a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration:none;
+  padding: 10px 30px;
+  border: 1px solid #fff
+}
+
+.other-pages__video h1 p {
+  padding: 15px;
+}
+
+.other-pages{
+  text-align: center;
+  color: white;
+}
+
+.contain-iframe {
+  margin-top: 40px;
+}
